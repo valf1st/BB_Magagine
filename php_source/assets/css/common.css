@@ -1,0 +1,27 @@
+/* left side menu */
+
+div#subContents {
+    width: 16%;
+    position: fixed;  
+    z-index: 20;  
+}
+
+#subContents ul {
+	padding-left: 10px;
+	list-style:none;
+}
+
+#subContents li {
+	margin-bottom: 10px;
+}
+
+#subContents li a {
+	margin-bottom: 10px;
+	color: #555;
+}
+
+#subContents li.active a {
+	margin-bottom: 10px;
+	color: #111;
+	font-weight:bold;
+}

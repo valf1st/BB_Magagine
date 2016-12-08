@@ -1,0 +1,129 @@
+/*body{
+    margin: 0;  
+    padding: 100px 0 50px 0;  
+}*/
+body{
+    background: #f8f6eb;
+    min-width: 700px;
+    max-width:1200px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+    font-family: sans-serif;
+}
+* html body{  
+    overflow: hidden;  
+} 
+
+
+/*header*/
+
+div#header  {  
+    width: 100%;  
+    padding: 5px;
+	margin-bottom:10px;
+    background: #ff3333; /*url(../images/bg/header.gif) repeat-x;*/
+    /*border-bottom: 1px solid #CCC;*/
+    color: #FFF;  
+    position: fixed;
+    height: 40px;
+    top:0;  
+    left:0;
+    /* 影指定 */
+    box-shadow: 0 1px 8px #333333;
+    -moz-box-shadow: 0 1px 8px #333333; /* Firefox対応 */
+    -webkit-box-shadow: 0 1px 8px #333333; /* Safari、Chrome対応 */
+}  
+* html div#header    {     
+    position: absolute;     
+    top: expression(eval(document.documentElement.scrollTop+0));  
+}
+#header a{
+	color: #FFF;
+	text-decoration:none;
+    margin-left:10px;
+    margin-top:0px;
+}
+#header #headermenu {
+	position: absolute;
+	top: 0;
+	/*right: 0;*/
+	padding-left: 120px;
+	margin-bottom: 15px;
+	padding-top: 5px;
+	/*font-size:small;*/
+}
+
+#header #headermenu li {
+	display: inline;
+	margin-right: 10px;
+}
+
+#header #headermenu li a {
+	color: #FFF;
+}
+
+#header #headermenu li a:hover {
+	color: #BBB;
+}
+
+#header #headermenu li.active a {
+	color: #FCC;
+}
+
+#header #headermenu-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-top: 5px;
+	text-decoration:none;
+}
+
+#header #headermenu-right li {
+    position: relative;
+    float: left;
+    display: inline;
+    margin-right: 40px;
+    /*margin-top: -15px;*/
+}
+
+#header #headermenu-right li p {
+    margin-top: 0px;
+}
+
+#header #headermenu-right li a {
+    margin-top: 10px;
+}
+
+#header #headermenu-right li:hover {
+  color: #DFE;
+  /*background: #333;*/
+}
+
+#header #headermenu-right li ul {
+  display: none;
+  position: absolute;
+  top: 28px;
+  left: -5px;
+  padding: 10px;
+  width: 110px;
+  background: #AFB;
+  border: solid 1.5px #ccc;
+}
+
+#header #headermenu-right li ul li {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  border: none;
+}
+
+#header #headermenu-right li ul li a {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+}
+
+#header #headermenu-right li ul li a:hover {
+  background: #999;
+  color: #fff;
+}

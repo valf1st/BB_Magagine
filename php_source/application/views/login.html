@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>GA'sa login</title>
+
+        <link rel="shortcut icon" href="../assets/img/favicon_adm.ico" />
+        <link href="../assets/css/common.css" rel="stylesheet">
+        <link href="../assets/css/parts.css" rel="stylesheet">
+		<link href="../assets/css/unique.css" rel="stylesheet">
+    </head>
+    <body>
+        <?=$header?>
+        
+        <div id="overall">
+            <div class="container8">
+            
+            <!--<form id="loginForm" name="loginForm" action="<?php print($_SERVER['PHP_SELF']) ?>" method="POST">-->
+            <br>
+            <form id="loginForm" name="loginForm" action="login" method="POST">
+                <fieldset>
+                    <legend>login</legend>
+                    <div><?php echo $error ?></div>
+                    <label for="userid">ID</label><input type="text" id="name" name="name" value="<?echo $name?>">
+                        <br>
+                    <label for="password">Password</label><input type="password" id="pass" name="pass" value="<?echo $pass?>">
+                        <br>
+                    <label></label><input type="submit" id="login" name="login" value="ログイン">
+                </fieldset>
+            </form>
+            <!--Not registered yet? <a href="./register">Sign up here</a>.-->
+
+            </div>
+        </div>
+    </body>
+</html>
